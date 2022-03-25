@@ -39,6 +39,8 @@ const smallArray = getSizedArray(100);
 const mediumArray = getSizedArray(1000);
 const largeArray = getSizedArray(10000);
 const extraLargeArray = getSizedArray(100000);
+const lessHugeArr = getSizedArray(300000)
+const hugeArr = getSizedArray(10000000)
 
 
 
@@ -47,13 +49,13 @@ const extraLargeArray = getSizedArray(100000);
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(extraLargeArray);
+doublerAppend(lessHugeArr);
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(extraLargeArray);
+doublerInsert(lessHugeArr);
 let resultsInsert = perf.stop();
 
 

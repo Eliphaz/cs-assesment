@@ -1,0 +1,22 @@
+hugeArr = waiting on results... need faster computer
+
+lessHugeArr = insert 9.9759705 s
+                append 122.648375 ms
+
+XL = insert 1.107410333 s
+    append 3.11475 ms
+
+L = insert 8.802458 ms
+    append 562.167 μs
+
+M = insert 179.958 μs
+    append 131.542 μs
+
+S = insert 37.667 μs
+    append 82.583 μs
+
+XS = insert 24.875 μs
+    append 70.417 μs
+
+
+The functions are different speeds because of unshift()/push(), push just adds something to the end of an array, modifying a single peice of memory (O(1)). Unshift adds something to the beginning of an array, in the process moving evertthing in the array down one (O(n). For this reason the function that uses push() scales astronomically better.
